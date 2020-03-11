@@ -1,0 +1,44 @@
+<hr>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12">
+      <h4>Angular Bootstrap on StackBlitz</h4>
+      <br>
+      <p><b>Dependecies</b></p>
+      <p>install npm package: </p>
+      <code><pre>
+        @ng-bootstrap/ng-bootstrap</pre></code>      
+      <p>add css to external resources: </p>
+<code><pre>https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css</pre></code>
+      <p>Edit <code>app/app.module.ts</code> to include the following:</p>
+<code><pre>
+...
+import &#123; NgbModule &#125; from '@ng-bootstrap/ng-bootstrap';
+...
+@NgModule(&#123;
+  ...
+  imports: [ ... , NgbModule.forRoot( ) ],
+  ...
+&#125;)
+</pre></code>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p>Popup modal example:</p>
+      <app-popup-modal></app-popup-modal>
+    </div>
+  </div>
+
+  <hr>
+  
+  <a class="btn btn-sm btn-outline-primary" href="https://stackblitz.com/edit/bootstrap">View source code</a>
+
+  <div style="height:100px;width:100%" ></div>
+
+</div>
